@@ -1,0 +1,276 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            font-size:1.1rem;
+            letter-spacing: 1px;
+        }
+        html,body{
+            /* scroll-behavior:smooth; */
+            height:auto;
+            min-height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        body{
+            padding-bottom: 20px;
+            background-color: #6A89A7;
+            color:white;
+        } 
+        img{
+            max-width: 100%;
+            height:auto;
+            object-fit: fill;
+        }
+        a{
+            color:cyan;
+            text-decoration: none;
+        }
+        /* navbar */
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding:0 50px;
+            height:80px;
+            align-items: center;
+        }
+        nav .left a{
+            color:cyan;
+            font:bold 2rem algerian;
+        }
+        nav .right a{
+            color:white;
+            margin:0 10px;
+            font:normal 1.1rem arial;
+        }
+        nav .right a:last-child{
+            color:white;
+            background-color: grey;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        nav .right a span{
+            margin-left: 5px;
+        }
+
+        /* headsection  */
+        .head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 50px;
+            margin: 50px 0;
+            gap:40px;
+            /* box-shadow: 0 0 3px rgb(237, 232, 232); */
+            
+        }
+        .head .text h2{
+            font-size:45px;
+        }
+        .head .text .links{
+            margin-top: 25px;
+        }
+        .head .text .links a{
+            display: inline-block;
+            padding: 5px 10px;
+            border:2px solid black;
+            border-radius:5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition:.1s;
+        }
+        .head .text .links a:hover{
+            color:grey;
+            border:2px solid grey;
+        }
+        .head .text{
+            flex:5;
+        }
+        .head .headshots{
+            flex:2;
+            display: flex;
+            justify-content: right;
+        }
+        .head .headshots img{
+            width: 300px;
+            height: 300px;
+            /* object-fit: contain; */
+            border-radius:50%;
+            
+        }
+
+        /* skiils section  */
+        #skills{
+            padding: 10px 50px;
+            margin-bottom: 100px;
+        }
+        #skills h2{
+            text-align: center;
+            font-size:35px;
+        }
+        #skills .text{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #skills .cells{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #skills .cells .cell{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            padding: 10px 20px;
+            border:1px solid grey;
+            border-radius: 5px;
+            margin:10px;
+            gap:10px;
+        }
+        #skills .cells .cell img{
+            width: 30px;
+            height: 30px;  
+        }
+        #skills .cells .cell span{
+            text-transform: uppercase;
+            font-size:18px;
+        }
+
+        /* testimony */
+        #testimony{
+            padding: 10px 50px;
+            margin-bottom: 100px;
+        }
+        #testimony h2{
+            font-size:35px;
+            margin-bottom: 30px;
+        }
+        #testimony .group{
+            display: flex;
+            align-items: center;
+            gap:50px;
+            margin-bottom: 50px;
+
+        }
+        #testimony .group .detail{
+            text-align: center;
+            flex:2;
+        }
+        #testimony .group .text{
+            flex:8;
+        }
+        #testimony .group .detail img{
+            aspect-ratio: 1/1;
+            width: 200px;
+            height: 200px;
+            /* object-fit: contain; */
+            border-radius:50%;
+            margin-bottom: 10px;
+        }
+        #testimony .group .detail p{
+            font-weight:600;   
+        }
+        #testimony .group .detail p:last-child{
+            font-weight:normal;   
+        }
+
+        /* contact section  */
+        #contact{
+            padding: 0 50px;
+            margin-bottom: 100px;
+        }
+        #contact h2{
+            font-size: 35px;
+        }
+        #contact .group{
+            display: flex;
+            gap:50px;
+        }
+        #contact .group .text{
+            flex:3;
+            margin-top: 20px;
+            
+        }
+        #contact .group form{
+            flex:3;
+            display: flex;
+            flex-direction:column;
+        }
+        #contact .group form input,
+        #contact .group form textarea{
+            font:normal 1.1rem 'poppins',san-serif;
+            border:2px solid rgb(53, 53, 118);
+            background-color: transparent;
+            color:white;
+            padding: 10px;
+            margin-bottom: 15px;
+            outline:none;
+            resize:none;
+        }
+        #contact .group button{
+            font-size:16px;
+            background-color: blue;
+            color:white;
+            font-family:'poppins',san-serif;
+            border:none;
+            height:50px;
+            cursor:pointer;
+            transition: .1s;
+        }
+        #contact .group button:hover{
+            filter:brightness(.9);
+        }
+
+        @media(max-width:600px){
+            /* nav  */
+            nav{
+                padding:0 20px;
+            }
+            nav .right a{
+                font-size:22px;
+            }
+            nav .right a:last-child{
+                color:black;
+                background-color: transparent;
+                padding:0;
+            }
+            nav .right a span{
+                display: none;
+            }
+
+            /* headsection */
+            .head{
+                flex-direction: column-reverse  ;
+                padding:0 20px;
+            }
+            .head .text h2{
+                font-size: 30px;
+            }
+
+        /* skiils section  */
+            #skills{
+                padding:0 20px;
+            }
+            #skills .cells .cell span{
+                font-size:16px;
+            }
+
+        /* testimony */
+            #testimony{
+                text-align: center;
+                padding: 0 20px;
+            }
+            #testimony .group{
+                flex-direction: column;
+            }
+
+            /* contact section  */
+            #contact .group{
+                flex-direction:column;
+            }
+            #contact{
+                padding: 0 20px;
+            }
+        }
