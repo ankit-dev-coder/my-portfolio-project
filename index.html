@@ -12,20 +12,20 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="left">
-            <a href="#">Ankit sharma</a>
-        </div>
-        
-        <div class="right">
+    <header>
+    <nav class="navbar">
+        <div class="logo">Ankit</div>
+        <button class="menu-btn" id="menu-btn">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">home</a></li>
             <li><a href="#skills">skills</a></li>
-            <li><a href="#testimony">testimony</a></li>
+            <li><a href="#projects">skills</a></li>
             <li><a href="#contact">contact</a></li>
-        </div>
+        </ul>
     </nav>
+    </header>
     <section class="head">
         <div class="text">
             <h2>Hi, i'm Ankit👋</h2>
@@ -134,12 +134,14 @@
             </form>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <div class="right">
             <a href="https://github.com/ankit-dev-coder" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>github</span></a>
             <a href="https://www.linkedin.com/in/ankit-sharma-5911ab2bb/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span>linkedin</span></a>
             <a href="mailto:kaido321963@gmail.com"> <i class="fa-solid fa-envelope"></i><span>email</span></a>
         </div>
     </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>
