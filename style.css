@@ -305,7 +305,7 @@
             .nav-links{
                 display: none;
                 flex-direction:column;
-                background:rgb(5, 69, 77);
+                background:transparent;
                 position:absolute;
                 top:60px;
                 left:0;
@@ -333,6 +333,9 @@
         /* skiils section  */
             #skills{
                 padding:0 20px;
+            }
+            #skills .cells .cell{
+                justify-content: start;
             }
             #skills .cells .cell span{
                 font-size:16px;
