@@ -15,7 +15,7 @@
         }
         body{
             padding-bottom: 20px;
-            background-color: #6A89A7;
+            background-color: black;
             color:white;
         } 
         img{
@@ -36,7 +36,7 @@
             background-color: #111;
         }
         .logo{
-            color:white;
+            color:cyan;
             font-size:1.5em;
         }
         .nav-links{
@@ -72,6 +72,7 @@
         }
         .head .text h2{
             font-size:45px;
+            color:cyan;
         }
         .head .text .links{
             margin-top: 25px;
@@ -113,6 +114,7 @@
         #skills h2{
             text-align: center;
             font-size:35px;
+            color:cyan;
         }
         #skills .text{
             text-align: center;
@@ -133,6 +135,8 @@
             border-radius: 5px;
             margin:10px;
             gap:10px;
+            background-color: #111;
+
         }
         #skills .cells .cell img{
             width: 30px;
@@ -148,6 +152,7 @@
             text-align: center;
             font:bold 2.6rem hectiva;
             margin:4vh 0;
+            color:cyan;
         }
         .container{
             display: flex;
@@ -178,26 +183,31 @@
             object-fit: cover;
         }
         .project h3{
-            font-size:1.4rem;
+            font-size:1.3rem;
+            text-align: center;
+            margin:1rem 0;
         }
         .project .btn{
             font:normal 1rem arial;
-            color:white;
+            color:cyan;
             background-color: transparent;
             padding:0.6rem;
+            border:none;
+            background-color: #111;
             border-radius: 2rem;
             margin-right:2rem;
             /* margin-top:10vh; */
         }
 
         /* testimony */
-        #testimony{
+        /* #testimony{
             padding: 10px 50px;
             margin-bottom: 100px;
         }
         #testimony h2{
             font-size:35px;
             margin-bottom: 30px;
+            color:cyan;
         }
         #testimony .group{
             display: flex;
@@ -218,7 +228,7 @@
             width: 200px;
             height: 200px;
             /* object-fit: contain; */
-            border-radius:50%;
+            /* border-radius:50%;
             margin-bottom: 10px;
         }
         #testimony .group .detail p{
@@ -226,7 +236,7 @@
         }
         #testimony .group .detail p:last-child{
             font-weight:normal;   
-        }
+        } */ */
 
         /* contact section  */
         #contact{
@@ -235,6 +245,9 @@
         }
         #contact h2{
             font-size: 35px;
+            color:cyan;
+            text-align: center;
+            margin-bottom:2rem;
         }
         #contact .group{
             display: flex;
@@ -242,7 +255,8 @@
         }
         #contact .group .text{
             flex:3;
-            margin-top: 20px;
+            margin-left:3rem;
+            font-size:1.2rem;
             
         }
         #contact .group form{
@@ -258,6 +272,7 @@
             color:white;
             padding: 10px;
             margin-bottom: 15px;
+            margin-right:1rem;
             outline:none;
             resize:none;
         }
@@ -268,6 +283,7 @@
             font-family:'poppins',san-serif;
             border:none;
             height:50px;
+            margin-right:1rem;
             cursor:pointer;
             transition: .1s;
         }
@@ -286,10 +302,14 @@
             color:white;
             margin:0 6rem;
             font:normal 1.1rem arial;
+            background-color: #111;
+            padding:0.4rem;
+            border-radius: 1rem;
+
         }
         footer .right a:last-child{
             color:white;
-            background-color: grey;
+            /* background-color: grey; */
             padding: 5px 15px;
             border-radius: 5px;
         }
@@ -364,13 +384,13 @@
             }
 
             /* testimony */
-            #testimony{
+            /* #testimony{
                 text-align: center;
                 padding: 0 20px;
             }
             #testimony .group{
                 flex-direction: column;
-            }
+            } */
 
             /* contact section  */
             #contact .group{
